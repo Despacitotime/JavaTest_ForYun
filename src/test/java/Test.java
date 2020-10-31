@@ -35,6 +35,7 @@ public class Test {
             for (Cat catsCat : cats.getCats()) {
                 System.out.println(catsCat);
             }
+            System.out.println(cats);
         } catch (Exception e) {
             e.printStackTrace();
         }

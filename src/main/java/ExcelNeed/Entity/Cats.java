@@ -1,5 +1,7 @@
 package ExcelNeed.Entity;
 
+import io.swagger.models.auth.In;
+
 import java.util.List;
 
 /**
@@ -8,11 +10,13 @@ import java.util.List;
  */
 public class Cats {
     private List<Cat> cats;
+    private Integer num;
 
     @Override
     public String toString() {
         return "Cats{" +
                 "cats=" + cats +
+                ", num=" + num +
                 '}';
     }
 
