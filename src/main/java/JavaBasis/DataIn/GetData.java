@@ -13,18 +13,22 @@ public class GetData {
         System.out.println("请输入一串字符，格式 [1,1,0,1,1,1]");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
-//        System.out.println(str);
+        System.out.println(str);
         char[] charArray = str.toCharArray();
         int maxSize = 0,counts = 0;
         for(int i = 0;i < str.length();i++){
             while(charArray[i]!='0'){
-                if(charArray[i]=='1') counts++;
+                if(charArray[i]=='1'){
+                    counts++;
+                }
                 i++;
                 if(i==str.length()){
                     break;
                 }
             }
-            if(counts>maxSize) maxSize=counts;
+            if(counts>maxSize){
+                maxSize=counts;
+            }
             counts=0;
         }
         System.out.println(maxSize);
